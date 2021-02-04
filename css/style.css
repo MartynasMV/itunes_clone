@@ -10,6 +10,10 @@ body {
   margin: 0;
   padding: 0; /* resetting everything. btw good high quality stock photos can be found here https://www.pexels.com/ */
   background: url("/images/showcase.jpg") no-repeat center/cover;
+  width: 100%;
+  height: 100vh; /* vh parameter to take 100 procent of the screen */
+  position: relative;
+  overflow-y: hidden; /* gets rid of the space above teh bar somehow. in result the menu bar is snapped to the top*/
 }
 /* Navigation */
 nav {
@@ -18,7 +22,7 @@ nav {
   background-color: #333;
   color: #eee;
   position: fixed; /* makes nav bar always be at the top of teh screen when scrolling */
-}
+} /* for some reason in my project there is still tiny space left on the top  */
 nav ul {
   padding: 0;
   margin: 0;
