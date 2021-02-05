@@ -7,11 +7,11 @@ body {
 }
 /* Css Variables */
 :root {
-  --primary--color: #b90415;
-  --primary--color-hover: #d3071b;
-  --secondary--color: #103063;
-  --secondary--color-hover: #143f85;
-  --light--color: #f4f4f4;
+  --primary-color: #b90415;
+  --primary-color-hover: #d3071b;
+  --secondary-color: #103063;
+  --secondary-color-hover: #143f85;
+  --light-color: #f4f4f4;
 }
 a {
   text-decoration: none;
@@ -62,9 +62,45 @@ img {
   margin: 0 auto;
   padding: 0 3rem;
 }
-#showcase .lead {
+.lead {
   font-size: 1.3rem;
 }
+
+/* buttons */
+.btn {
+  padding: 1rem;
+  color: #fff;
+  display: inline-block; /* display: inline-block allows to set a width and height on the element. */
+}
+.btn-primary {
+  background: var(--primary-color);
+}
+.btn-primary-hover {
+  background: var(--primary-color-hover);
+}
+.btn-secondary {
+  background: var(--secondary-color);
+}
+.btn-secondary-hover {
+  background: var(--secondary-color-hover);
+}
+/* text colors */
+.text-primary {
+  color: var(--primary-color);
+}
+.text-secondary {
+  color: var(--secondary-color);
+}
+.text-light {
+  color: var(--light-color);
+}
+.mb {
+  margin-bottom: 1rem;
+}
+.mt {
+  margin-top: 1rem; /* fmi video suggest to mae .mb and mt classes just in case. It may not be used after all */
+}
+
 /* Navigation */
 nav {
   height: 40px;
