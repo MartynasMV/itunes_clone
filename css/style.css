@@ -29,8 +29,12 @@ img {
   font-size: 2.5rem;
   margin: 0; /* for me not too clear why we had to force margin 0. why there was space of 33.2 around the head without the setting "margin 0?" */
 }
-.ssection h3 {
+h3 {
   font-size: 2rem;
+}
+section#entertainment {
+  background: url("../images/section-bg.jpg") no-repeat bottom/cover;
+  padding: 10rem 0;
 }
 
 /* Showcase */
@@ -71,6 +75,7 @@ img {
   padding: 1rem;
   color: #fff;
   display: inline-block; /* display: inline-block allows to set a width and height on the element. */
+  border-radius: 5px;
 }
 .btn-primary {
   background: var(--primary-color);
@@ -93,6 +98,10 @@ img {
 }
 .text-light {
   color: var(--light-color);
+}
+.bg-light {
+  background: var(--light-color);
+  color: #333;
 }
 .mb {
   margin-bottom: 1rem;
